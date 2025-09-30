@@ -22,11 +22,8 @@ public class Tarefa {
     private String descrição;
     private ZonedDateTime prazo;
 
-    // Muitas tarefas podem pertencer a um usuário
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
-
-
 }
