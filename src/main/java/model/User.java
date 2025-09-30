@@ -22,7 +22,6 @@ public class User {
     private String email;
     private String Senha;
 
-    // Um usuário pode ter várias tarefas
     @OneToMany(mappedBy = "user")
     private List<Tarefa> tarefas;
 
